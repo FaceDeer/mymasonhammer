@@ -1,6 +1,6 @@
-Use the hammer to make stairs and ladders in stone. Great for mining!
+Use the hammer to make stairs and climbable footholds in stone. Great for mining and cave exploration!
 
-Right click for the different modes. (stairs, ladders, foot hold)
+Right click for the different modes. (stairs, foot hold)
 A message will show in chat so you know what mode you are in.
 
 You have to hit the nodes a few times. 

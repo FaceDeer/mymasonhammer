@@ -10,102 +10,6 @@ local item = default_material [i][1]
 local mat = default_material [i][2]
 local desc = default_material [i][3]
 local gro = default_material [i][4]
-minetest.register_node("mymasonhammer:"..mat.."_ladder", {
-	description =  desc.." Ladder Block",
-	drawtype = "nodebox",
-	tiles = {
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png^mymasonhammer_tint.png",
-		},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	walkable = true,
-	climbable = true,
-	drop = item,
-	groups = gro,
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, 0.4375, 0.5, 0.5, 0.5},
-			{-0.5, -0.5, 0.3175, -0.3125, 0.5, 0.5},
-			{0.3125, -0.5, 0.3175, 0.5, 0.5, 0.5},
-			{-0.5, -0.4375, 0.3175, 0.5, -0.3125, 0.5},
-			{-0.5, 0.3125, 0.3175, 0.5, 0.4375, 0.5},
-			{-0.5, -0.1875, 0.3175, 0.5, -0.0625, 0.5},
-			{-0.5, 0.0625, 0.3175, 0.5, 0.1875, 0.5},
-		}
-	},
-	selection_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, 0.3175, 0.5, 0.5, 0.5},
-		}
-	},
-})
-minetest.register_node("mymasonhammer:"..mat.."_ladder2", {
-	description =  desc.." Ladder Block",
-	drawtype = "nodebox",
-	tiles = {
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	walkable = true,
-	--climbable = false,
-	drop = item,
-	groups = gro,
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, -0.3175, 0.5, 0.5, 0.5},
-		}
-	},
-	selection_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, -0.3175, 0.5, 0.5, 0.5},
-		}
-	},
-})
-minetest.register_node("mymasonhammer:"..mat.."_ladder3", {
-	description =  desc.." Ladder Block",
-	drawtype = "nodebox",
-	tiles = {
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		mat..".png",
-		},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	walkable = true,
-	--climbable = true,
-	drop = item,
-	groups = gro,
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, 0.3175, 0.5, 0.5, 0.5},
-		}
-	},
-	selection_box = {
-		type = "fixed",
-		fixed = {
-			{-0.5, -0.5, 0.3175, 0.5, 0.5, 0.5},
-		}
-	},
-})
 minetest.register_node("mymasonhammer:"..mat.."_foot", {
 	description =  desc.." Foot Hold Block",
 	drawtype = "nodebox",
@@ -126,21 +30,21 @@ minetest.register_node("mymasonhammer:"..mat.."_foot", {
 	node_box = {
 		type = "fixed",
 		fixed = {
-			{-0.5, -0.5, -0.1875, 0.5, 0.5, 0.5},
-			{-0.375, -0.3125, -0.3125, -0.125, -0.125, -0.1875},
-			{0.125, 0.1875, -0.3125, 0.375, 0.375, -0.1875},
+			{-0.5, -0.5, -0.3125, 0.5, 0.5, 0.5},
+			{-0.375, -0.3125, -0.3125, -0.125, -0.125, -0.435},
+			{0.125, 0.1875, -0.3125, 0.375, 0.375, -0.435},
 		}
 	},
 	selection_box = {
 		type = "fixed",
 		fixed = {
-			{-0.5, -0.5, 0.4375, 0.5, 0.5, 0.5},
+			{-0.5, -0.5, -0.15, 0.5, 0.5, 0.5},
 		}
 	},
    collision_box = {
       type="fixed",
       fixed = {
-         {-0.5, -0.5, -0.1875, 0.5, 0.5, 0.5},
+         {-0.5, -0.5, -0.15, 0.5, 0.5, 0.5},
       }
    },
 })
